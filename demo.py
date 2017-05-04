@@ -1,11 +1,11 @@
 from time import sleep
 from progressBar import *
 
-items = list(range(0,57))
+items = list(range(0,100))
 i=0
-l = len(items)
-progressBar(i, l, prefix = 'Running: ', length = 50)
+length = len(items)
+progressBar(i, length, prefix = 'Running: ', length = 50)
 for items in items:
     sleep(0.1)
     i+=1
-    progressBar(i, l, prefix = "Running: ", length = 50)
+    progressBar(i, length, prefix = "Running: ", length = 50)
